@@ -1,0 +1,230 @@
+/* Container Styles */
+.profile {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: #fffbfb;
+}
+
+/* Header Styles */
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.profile-header .info {
+  flex-grow: 1;
+}
+
+.profile-header .info h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #ffffff;
+}
+
+.profile-header .info h2 {
+  margin: 5px 0 10px;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.profile-header .info .rating {
+  display: flex;
+  align-items: center;
+}
+
+.profile-header .info .rating span {
+  margin-left: 10px;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+/* Contact Information */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact-info div {
+  flex: 1 1 45%;
+  margin-bottom: 20px;
+}
+
+.contact-info div p {
+  margin: 5px 0;
+}
+
+.contact-info div a {
+  color: #bd8888;
+  text-decoration: none;
+}
+
+.contact-info div a:hover {
+  text-decoration: underline;
+}
+
+/* Work Information */
+.work-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.work-info .work-place {
+  margin-bottom: 15px;
+}
+
+.work-info .work-place h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.work-info .work-place p {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+/* Skills */
+.skills {
+  margin-top: 20px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  display: inline-block;
+  background-color: #f90000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Watched Videos */
+.watched-videos {
+  margin-top: 20px;
+}
+
+.watched-videos table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #333;
+  color: #fffbfb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.watched-videos th,
+.watched-videos td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.watched-videos th {
+  background-color: #444;
+}
+
+.watched-videos tr:hover {
+  background-color: #444;
+}
+
+/* Terms and Conditions */
+.terms-container {
+  margin-top: 30px;
+}
+
+.terms-container p {
+  background-color: #f33f3f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+/* Editable Input Fields */
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+input[type="text"]::placeholder,
+input[type="date"]::placeholder,
+input[type="email"]::placeholder {
+  color: #bbb;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  background-color: #444;
+}
+
+/* Buttons */
+button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f64343;
+}
+
+.add-skill-input {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.add-skill-button {
+  display: inline-block;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-skill-button:hover {
+  background-color: #c48888;
+}

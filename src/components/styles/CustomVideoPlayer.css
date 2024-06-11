@@ -1,0 +1,131 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.top-controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #000000;
+  border: none;
+  border-radius: 120px;
+  cursor: pointer;
+}
+
+.upload-section {
+  display: flex;
+  justify-content: center;
+}
+
+.description-input {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid #ff0000;
+  width: 300px;
+}
+
+.file-upload-container {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.upload-label {
+  background-color: #ff0000; /* Red color */
+  padding: 10px;
+  cursor: pointer;
+  color: #ffffff; /* Change text color to white for better contrast */
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.upload-input {
+  display: none;
+}
+
+.uploaded-videos {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-container {
+  background-color: #1a1a1a;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.video-container p {
+  margin: 0;
+  padding: 5px 0;
+  color: #d88f8f;
+}
+
+.delete-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ff4c4c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #ff0000;
+}
+
+.likes-comments-section {
+  margin-top: 10px;
+  text-align: left;
+  color: #d88f8f;
+}
+
+.likes-comments-section p {
+  margin: 5px 0;
+  padding: 0;
+}
+
+.comments-list {
+  max-height: 100px;
+  overflow-y: auto;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.comment {
+  padding: 5px 0;
+  border-bottom: 1px solid #444;
+}
+
+.comment strong {
+  color: #ff8c8c;
+}

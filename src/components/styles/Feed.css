@@ -1,0 +1,161 @@
+/* Feed.css */
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000000;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.top-controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #d88f8f;
+  color: #000000;
+  border: none;
+  border-radius: 120px;
+  cursor: pointer;
+}
+
+.upload-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.description-input {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid #d88f8f;
+  width: 300px;
+}
+
+.file-upload-container {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.upload-label {
+  background-color: #d88f8f;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.upload-input {
+  display: none;
+}
+
+.feed {
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-between; /* Distributes the space evenly */
+}
+
+.video-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  width: 30%; /* Each video card takes up roughly a third of the container width */
+  margin-bottom: 20px; /* Space between rows */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+}
+
+.video-details {
+  padding: 10px;
+  background-color: #000000;
+}
+
+.video-details p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #a26d6d; /* Lighter font color */
+}
+
+.like-button {
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: #ff4c4c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  background-color: #ff0000;
+}
+
+.comments-section {
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-top: 1px solid #333;
+}
+
+.comments-section input[type="text"] {
+  width: calc(100% - 20px); /* Adjust to leave space for padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d88f8f;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.comments-section button {
+  padding: 5px 10px;
+  background-color: #d88f8f;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comments-list {
+  max-height: 100px;
+  overflow-y: auto;
+  margin-top: 10px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+.comment {
+  padding: 5px 0;
+  border-bottom: 1px solid #444;
+  color: #d88f8f;
+}
+
+.comment strong {
+  color: #ff8c8c;
+}

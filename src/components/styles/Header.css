@@ -1,0 +1,23 @@
+/* src/components/styles/Header.css */
+header {
+  background-color: #000000;
+  padding: 4px;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+}
+
+.logo {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}

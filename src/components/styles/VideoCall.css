@@ -1,0 +1,55 @@
+.video-call {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-color: #000000;
+  
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.local-video,
+.remote-video {
+  width: 70%;
+  height: auto;
+  border: 2px solid #ed3a3a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.controls button,
+.top-controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:hover,
+.top-controls button:hover {
+  background-color: #d94646;
+  transform: scale(1.05);
+}
